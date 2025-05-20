@@ -82,3 +82,36 @@ Excluded Cost: 0
 Non-Excluded Shipping Cost: 105.97
 Final Shipping Cost (before sending to Shopify): 105.97
 Response to Shopify: {"rates":[{"service_name":"Custom Shipping","service_code":"CUSTOM_SHIP","total_price":10597,"currency":"GBP","description":"Calculated based on your order weight and location"}]}
+Product: NEW The Cotswolds - Weight: 110.00 - Pallets: 0.50
+Product: White Valley - Weight: 105.00 - Pallets: 0.30
+Query: SELECT `3` AS shipping_cost FROM pallet_rates WHERE postcode = 'YO25 9EH' LIMIT 1
+Query: SELECT `3` AS shipping_cost FROM pallet_rates WHERE postcode = 'YO25 9E' LIMIT 1
+Query: SELECT `3` AS shipping_cost FROM pallet_rates WHERE postcode = 'YO25 9' LIMIT 1
+Query: SELECT `3` AS shipping_cost FROM pallet_rates WHERE postcode = 'YO25 ' LIMIT 1
+Matched Postcode: YO25 
+Excluded Cost: 0
+Non-Excluded Shipping Cost: 154
+Final Shipping Cost (before sending to Shopify): 154
+Response to Shopify: {"rates":[{"service_name":"Custom Shipping","service_code":"CUSTOM_SHIP","total_price":15400,"currency":"GBP","description":"Calculated based on your order weight and location"}]}
+Product: NEW The Cotswolds - Weight: 110.00 - Pallets: 0.50
+Product: White Valley - Weight: 105.00 - Pallets: 0.30
+Query: SELECT `3` AS shipping_cost FROM pallet_rates WHERE postcode = 'YO25 9EH' LIMIT 1
+Query: SELECT `3` AS shipping_cost FROM pallet_rates WHERE postcode = 'YO25 9E' LIMIT 1
+Query: SELECT `3` AS shipping_cost FROM pallet_rates WHERE postcode = 'YO25 9' LIMIT 1
+Query: SELECT `3` AS shipping_cost FROM pallet_rates WHERE postcode = 'YO25 ' LIMIT 1
+Matched Postcode: YO25 
+Excluded Cost: 0
+Non-Excluded Shipping Cost: 154
+Final Shipping Cost (before sending to Shopify): 154
+Response to Shopify: {"rates":[{"service_name":"Custom Shipping","service_code":"CUSTOM_SHIP","total_price":15400,"currency":"GBP","description":"Calculated based on your order weight and location"}]}
+Product: NEW The Cotswolds - Weight: 110.00 - Pallets: 0.50
+Product: White Valley - Weight: 105.00 - Pallets: 0.30
+Query: SELECT `3` AS shipping_cost FROM pallet_rates WHERE postcode = 'YO25 9JZ' LIMIT 1
+Query: SELECT `3` AS shipping_cost FROM pallet_rates WHERE postcode = 'YO25 9J' LIMIT 1
+Query: SELECT `3` AS shipping_cost FROM pallet_rates WHERE postcode = 'YO25 9' LIMIT 1
+Query: SELECT `3` AS shipping_cost FROM pallet_rates WHERE postcode = 'YO25 ' LIMIT 1
+Matched Postcode: YO25 
+Excluded Cost: 0
+Non-Excluded Shipping Cost: 154
+Final Shipping Cost (before sending to Shopify): 154
+Response to Shopify: {"rates":[{"service_name":"Custom Shipping","service_code":"CUSTOM_SHIP","total_price":15400,"currency":"GBP","description":"Calculated based on your order weight and location"}]}
