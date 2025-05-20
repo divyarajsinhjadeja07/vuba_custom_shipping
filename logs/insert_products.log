@@ -1,0 +1,15 @@
+2025-05-14 11:57:37: Processing shop: vuba-surfaces-shipping-test.myshopify.com
+2025-05-14 11:57:37: Existing products deleted for shop ID: 1
+2025-05-14 11:57:37: Calling API endpoint: /admin/api/2023-10/products.json?limit=50
+2025-05-14 11:57:38: API Response Status: unknown
+2025-05-14 11:57:38: Response keys: errors
+2025-05-14 11:57:38: Error: 'products' key not found in response
+2025-05-14 11:57:38: First 1000 characters of response: Array
+(
+    [errors] => Array
+        (
+            [limit] => expected String to be a Integer
+        )
+
+)
+

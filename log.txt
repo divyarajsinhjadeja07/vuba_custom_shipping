@@ -1,0 +1,84 @@
+Product: White Valley - Weight: 105.00 - Pallets: 0.30
+Query: SELECT `2` AS shipping_cost FROM pallet_rates WHERE postcode = 'N6B 2K4' LIMIT 1
+Query: SELECT `2` AS shipping_cost FROM pallet_rates WHERE postcode = 'N6B 2K' LIMIT 1
+Query: SELECT `2` AS shipping_cost FROM pallet_rates WHERE postcode = 'N6B 2' LIMIT 1
+Query: SELECT `2` AS shipping_cost FROM pallet_rates WHERE postcode = 'N6B ' LIMIT 1
+Query: SELECT `2` AS shipping_cost FROM pallet_rates WHERE postcode = 'N6B' LIMIT 1
+Query: SELECT `2` AS shipping_cost FROM pallet_rates WHERE postcode = 'N6' LIMIT 1
+Matched Postcode: N6
+Excluded Cost: 0
+Non-Excluded Shipping Cost: 140.44
+Final Shipping Cost (before sending to Shopify): 140.44
+Response to Shopify: {"rates":[{"service_name":"Custom Shipping","service_code":"CUSTOM_SHIP","total_price":14044,"currency":"GBP","description":"Calculated based on your order weight and location"}]}
+Product: White Valley - Weight: 105.00 - Pallets: 0.30
+Query: SELECT `2` AS shipping_cost FROM pallet_rates WHERE postcode = 'DN1 1AA' LIMIT 1
+Query: SELECT `2` AS shipping_cost FROM pallet_rates WHERE postcode = 'DN1 1A' LIMIT 1
+Query: SELECT `2` AS shipping_cost FROM pallet_rates WHERE postcode = 'DN1 1' LIMIT 1
+Query: SELECT `2` AS shipping_cost FROM pallet_rates WHERE postcode = 'DN1 ' LIMIT 1
+Query: SELECT `2` AS shipping_cost FROM pallet_rates WHERE postcode = 'DN1' LIMIT 1
+Query: SELECT `2` AS shipping_cost FROM pallet_rates WHERE postcode = 'DN' LIMIT 1
+Matched Postcode: DN
+Excluded Cost: 0
+Non-Excluded Shipping Cost: 105.97
+Final Shipping Cost (before sending to Shopify): 105.97
+Response to Shopify: {"rates":[{"service_name":"Custom Shipping","service_code":"CUSTOM_SHIP","total_price":10597,"currency":"GBP","description":"Calculated based on your order weight and location"}]}
+Product: White Valley - Weight: 105.00 - Pallets: 0.30
+Query: SELECT `2` AS shipping_cost FROM pallet_rates WHERE postcode = 'N6B 2K4' LIMIT 1
+Query: SELECT `2` AS shipping_cost FROM pallet_rates WHERE postcode = 'N6B 2K' LIMIT 1
+Query: SELECT `2` AS shipping_cost FROM pallet_rates WHERE postcode = 'N6B 2' LIMIT 1
+Query: SELECT `2` AS shipping_cost FROM pallet_rates WHERE postcode = 'N6B ' LIMIT 1
+Query: SELECT `2` AS shipping_cost FROM pallet_rates WHERE postcode = 'N6B' LIMIT 1
+Query: SELECT `2` AS shipping_cost FROM pallet_rates WHERE postcode = 'N6' LIMIT 1
+Matched Postcode: N6
+Excluded Cost: 0
+Non-Excluded Shipping Cost: 140.44
+Final Shipping Cost (before sending to Shopify): 140.44
+Response to Shopify: {"rates":[{"service_name":"Custom Shipping","service_code":"CUSTOM_SHIP","total_price":14044,"currency":"GBP","description":"Calculated based on your order weight and location"}]}
+Product: White Valley - Weight: 105.00 - Pallets: 0.30
+Query: SELECT `2` AS shipping_cost FROM pallet_rates WHERE postcode = 'DN1 1AA' LIMIT 1
+Query: SELECT `2` AS shipping_cost FROM pallet_rates WHERE postcode = 'DN1 1A' LIMIT 1
+Query: SELECT `2` AS shipping_cost FROM pallet_rates WHERE postcode = 'DN1 1' LIMIT 1
+Query: SELECT `2` AS shipping_cost FROM pallet_rates WHERE postcode = 'DN1 ' LIMIT 1
+Query: SELECT `2` AS shipping_cost FROM pallet_rates WHERE postcode = 'DN1' LIMIT 1
+Query: SELECT `2` AS shipping_cost FROM pallet_rates WHERE postcode = 'DN' LIMIT 1
+Matched Postcode: DN
+Excluded Cost: 0
+Non-Excluded Shipping Cost: 105.97
+Final Shipping Cost (before sending to Shopify): 105.97
+Response to Shopify: {"rates":[{"service_name":"Custom Shipping","service_code":"CUSTOM_SHIP","total_price":10597,"currency":"GBP","description":"Calculated based on your order weight and location"}]}
+Product: White Valley - Weight: 105.00 - Pallets: 0.30
+Query: SELECT `2` AS shipping_cost FROM pallet_rates WHERE postcode = 'DN1 1AA' LIMIT 1
+Query: SELECT `2` AS shipping_cost FROM pallet_rates WHERE postcode = 'DN1 1A' LIMIT 1
+Query: SELECT `2` AS shipping_cost FROM pallet_rates WHERE postcode = 'DN1 1' LIMIT 1
+Query: SELECT `2` AS shipping_cost FROM pallet_rates WHERE postcode = 'DN1 ' LIMIT 1
+Query: SELECT `2` AS shipping_cost FROM pallet_rates WHERE postcode = 'DN1' LIMIT 1
+Query: SELECT `2` AS shipping_cost FROM pallet_rates WHERE postcode = 'DN' LIMIT 1
+Matched Postcode: DN
+Excluded Cost: 0
+Non-Excluded Shipping Cost: 105.97
+Final Shipping Cost (before sending to Shopify): 105.97
+Response to Shopify: {"rates":[{"service_name":"Custom Shipping","service_code":"CUSTOM_SHIP","total_price":10597,"currency":"GBP","description":"Calculated based on your order weight and location"}]}
+Product: White Valley - Weight: 105.00 - Pallets: 0.30
+Query: SELECT `2` AS shipping_cost FROM pallet_rates WHERE postcode = 'DN1 1AA' LIMIT 1
+Query: SELECT `2` AS shipping_cost FROM pallet_rates WHERE postcode = 'DN1 1A' LIMIT 1
+Query: SELECT `2` AS shipping_cost FROM pallet_rates WHERE postcode = 'DN1 1' LIMIT 1
+Query: SELECT `2` AS shipping_cost FROM pallet_rates WHERE postcode = 'DN1 ' LIMIT 1
+Query: SELECT `2` AS shipping_cost FROM pallet_rates WHERE postcode = 'DN1' LIMIT 1
+Query: SELECT `2` AS shipping_cost FROM pallet_rates WHERE postcode = 'DN' LIMIT 1
+Matched Postcode: DN
+Excluded Cost: 0
+Non-Excluded Shipping Cost: 105.97
+Final Shipping Cost (before sending to Shopify): 105.97
+Response to Shopify: {"rates":[{"service_name":"Custom Shipping","service_code":"CUSTOM_SHIP","total_price":10597,"currency":"GBP","description":"Calculated based on your order weight and location"}]}
+Product: White Valley - Weight: 105.00 - Pallets: 0.30
+Query: SELECT `2` AS shipping_cost FROM pallet_rates WHERE postcode = 'DN1 1AA' LIMIT 1
+Query: SELECT `2` AS shipping_cost FROM pallet_rates WHERE postcode = 'DN1 1A' LIMIT 1
+Query: SELECT `2` AS shipping_cost FROM pallet_rates WHERE postcode = 'DN1 1' LIMIT 1
+Query: SELECT `2` AS shipping_cost FROM pallet_rates WHERE postcode = 'DN1 ' LIMIT 1
+Query: SELECT `2` AS shipping_cost FROM pallet_rates WHERE postcode = 'DN1' LIMIT 1
+Query: SELECT `2` AS shipping_cost FROM pallet_rates WHERE postcode = 'DN' LIMIT 1
+Matched Postcode: DN
+Excluded Cost: 0
+Non-Excluded Shipping Cost: 105.97
+Final Shipping Cost (before sending to Shopify): 105.97
+Response to Shopify: {"rates":[{"service_name":"Custom Shipping","service_code":"CUSTOM_SHIP","total_price":10597,"currency":"GBP","description":"Calculated based on your order weight and location"}]}
