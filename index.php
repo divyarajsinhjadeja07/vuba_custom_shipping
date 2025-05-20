@@ -1,5 +1,5 @@
 <?php
-echo "hello world"; die;
+
 include 'includes/connection.php';
 include 'includes/shopify.php';
 
