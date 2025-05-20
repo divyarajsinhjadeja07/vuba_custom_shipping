@@ -46,12 +46,12 @@ if ($total_weight_kg < 100) {
     ];
 
     // Log and return
-    file_put_contents("log.txt", "Box shipping applied. Total weight: $total_weight_kg kg, Boxes: $num_boxes, Cost: £$shipping_cost\n", FILE_APPEND);
+    //file_put_contents("log.txt", "Box shipping applied. Total weight: $total_weight_kg kg, Boxes: $num_boxes, Cost: £$shipping_cost\n", FILE_APPEND);
     header('Content-Type: application/json');
     echo json_encode($response);
     exit;
 }else {
-    file_put_contents("log.txt", "Raw Data" . $raw_input . "\n" , FILE_APPEND);
+    //file_put_contents("log.txt", "Raw Data" . $raw_input . "\n" , FILE_APPEND);
        // Pallet shipping logic
        $total_weight_kg = $total_weight / 1000;
        $pallet_units = 0;
@@ -61,18 +61,18 @@ if ($total_weight_kg < 100) {
            $quantity = $item['quantity'];
            $properties = $item['properties'] ?? [];
    
-           file_put_contents("log.txt", "Quantity: $quantity\n" . "properties: $properties\n", FILE_APPEND);
+           //file_put_contents("log.txt", "Quantity: $quantity\n" . "properties: $properties\n", FILE_APPEND);
    
            $excluded = isset($properties['excluded_from_shipping_calculator']) && strtolower($properties['excluded_from_shipping_calculator']) === 'true';
    
            if ($excluded) {
-            file_put_contents("log.txt", "Item excluded from shipping calculator\n", FILE_APPEND);
+            //file_put_contents("log.txt", "Item excluded from shipping calculator\n", FILE_APPEND);
                $individual_cost = isset($properties['individual_shipping_cost']) ? (float)$properties['individual_shipping_cost'] : 0;
                $individual_shipping_cost += $individual_cost * $quantity;
            } else {
                $pallet_amount = isset($properties['pallet_amount']) ? (float)$properties['pallet_amount'] : 0;
                $pallet_units += $pallet_amount * $quantity;
-               file_put_contents("log.txt", "Pallet amount: $pallet_amount, Quantity: $quantity, Total pallet units: $pallet_units\n", FILE_APPEND);
+               //file_put_contents("log.txt", "Pallet amount: $pallet_amount, Quantity: $quantity, Total pallet units: $pallet_units\n", FILE_APPEND);
            }
        }
    

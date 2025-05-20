@@ -16,12 +16,12 @@ function log_message($message) {
 
 // Get the JSON data from the request
 $json_data = file_get_contents('php://input');
-log_message("Received data sync request");
-log_message("Raw JSON received: " . substr($json_data, 0, 500) . "..."); // Log the first 500 chars of JSON
+// log_message("Received data sync request");
+// log_message("Raw JSON received: " . substr($json_data, 0, 500) . "..."); // Log the first 500 chars of JSON
 
 // Check if data is valid
 if (empty($json_data)) {
-    log_message("Error: Empty data received");
+    //log_message("Error: Empty data received");
     http_response_code(400);
     echo "No data received";
     exit;
@@ -31,13 +31,13 @@ if (empty($json_data)) {
 $data = json_decode($json_data, true);
 
 if (json_last_error() !== JSON_ERROR_NONE) {
-    log_message("Error decoding JSON: " . json_last_error_msg());
+    //log_message("Error decoding JSON: " . json_last_error_msg());
     http_response_code(400);
     echo "Invalid JSON data: " . json_last_error_msg();
     exit;
 }
 
-log_message("Successfully decoded JSON data with " . count($data) . " records");
+//log_message("Successfully decoded JSON data with " . count($data) . " records");
 
 // Begin transaction
 $conn->begin_transaction();
@@ -50,7 +50,7 @@ try {
     foreach ($data as $item) {
         // Extract the postcode - assuming it's a key in your JSON
         if (!isset($item['Postcode'])) {
-            log_message("Warning: Record missing Postcode field, skipping");
+            //log_message("Warning: Record missing Postcode field, skipping");
             continue;
         }
         
@@ -103,7 +103,7 @@ try {
                 throw new Exception("Error updating record for postcode {$postcode}: " . $conn->error);
             }
             $updated_count++;
-            log_message("Updated record for postcode: {$postcode}");
+            //log_message("Updated record for postcode: {$postcode}");
         } else {
             // INSERT new record
             $sql = "INSERT INTO pallet_rates (`postcode`, " . implode(", ", $columns) . ")
@@ -113,13 +113,13 @@ try {
                 throw new Exception("Error inserting record for postcode {$postcode}: " . $conn->error);
             }
             $inserted_count++;
-            log_message("Inserted new record for postcode: {$postcode}");
+            //log_message("Inserted new record for postcode: {$postcode}");
         }
     }
     
     // Commit the transaction
     $conn->commit();
-    log_message("Sync completed: {$inserted_count} records inserted, {$updated_count} records updated");
+    //log_message("Sync completed: {$inserted_count} records inserted, {$updated_count} records updated");
     
     // Return success response
     http_response_code(200);
@@ -131,7 +131,7 @@ try {
 } catch (Exception $e) {
     // Rollback on error
     $conn->rollback();
-    log_message("Error: " . $e->getMessage());
+    //log_message("Error: " . $e->getMessage());
     http_response_code(500);
     echo json_encode([
         'success' => false,
