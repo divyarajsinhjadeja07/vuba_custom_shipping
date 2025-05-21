@@ -22,7 +22,7 @@ if (isset($existing_services['carrier_services'])) {
 if (!$already_registered) {
     echo "Registering new carrier service...\n";
 
-    $webhook_url = "https://8f54-103-241-45-213.ngrok-free.app/vuba_custom_shipping/carrier_service_callback.php";
+    $webhook_url = "https://0800-103-241-45-213.ngrok-free.app/vuba_custom_shipping/carrier_service_callback.php";
 
     $carrier_service = [
         "carrier_service" => [

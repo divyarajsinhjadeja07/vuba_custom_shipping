@@ -28,7 +28,7 @@ foreach ($cart_items as $item) {
     if ($product['excluded_from_shipping_calculator']) {
         // Calculate excluded cost
         $excluded_cost += $product['individual_shipping_cost'] * $quantity;
-        //file_put_contents("log.txt", "Excluded Product: " . $product['title'] . " - Cost: " . $excluded_cost . "\n", FILE_APPEND);
+        file_put_contents("log.txt", "Excluded Product: " . $product['title'] . " - Cost: " . $excluded_cost . "\n", FILE_APPEND);
     } else {
         // Calculate total weight for non-excluded products
         $total_weight += $product['weight'] * $quantity;
@@ -39,7 +39,7 @@ foreach ($cart_items as $item) {
             'quantity' => $quantity
         ];
 
-        //file_put_contents("log.txt", "Product: " . $product['title'] . " - Weight: " . $product['weight'] . " - Pallets: " . $product['pallet_amount'] . "\n", FILE_APPEND);
+        file_put_contents("log.txt", "Product: " . $product['title'] . " - Weight: " . $product['weight'] . " - Pallets: " . $product['pallet_amount'] . "\n", FILE_APPEND);
     }
 }
 
@@ -53,9 +53,9 @@ if ($total_weight > 0) {
 $shipping_cost = $excluded_cost + $non_excluded_shipping_cost;
 
 // Log the calculated shipping cost
-// file_put_contents("log.txt", "Excluded Cost: " . $excluded_cost . "\n", FILE_APPEND);
-// file_put_contents("log.txt", "Non-Excluded Shipping Cost: " . $non_excluded_shipping_cost . "\n", FILE_APPEND);
-// file_put_contents("log.txt", "Final Shipping Cost (before sending to Shopify): " . $shipping_cost . "\n", FILE_APPEND);
+file_put_contents("log.txt", "Excluded Cost: " . $excluded_cost . "\n", FILE_APPEND);
+file_put_contents("log.txt", "Non-Excluded Shipping Cost: " . $non_excluded_shipping_cost . "\n", FILE_APPEND);
+file_put_contents("log.txt", "Final Shipping Cost (before sending to Shopify): " . $shipping_cost . "\n", FILE_APPEND);
 
 // Return shipping rates to Shopify
 $response = [
@@ -68,7 +68,7 @@ $response = [
     ]]
 ];
 // Log the response being sent to Shopify
-//file_put_contents("log.txt", "Response to Shopify: " . json_encode($response) . "\n", FILE_APPEND);
+file_put_contents("log.txt", "Response to Shopify: " . json_encode($response) . "\n", FILE_APPEND);
 
 header('Content-Type: application/json');
 echo json_encode($response);

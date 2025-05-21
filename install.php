@@ -1,7 +1,7 @@
 <?php
 
 $_API_KEY = '8546eda96454feae7ae54daf520ff0cb';
-$_NGROK_URL = 'https://8f54-103-241-45-213.ngrok-free.app';
+$_NGROK_URL = 'https://0800-103-241-45-213.ngrok-free.app';
 $shop = $_GET['shop'];
 $scopes = 'read_products,read_shipping,write_shipping,read_customers';
 $redirect_uri = $_NGROK_URL . '/vuba_custom_shipping/token.php';
